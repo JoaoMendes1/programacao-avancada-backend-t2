@@ -19,7 +19,7 @@ http.createServer((req, res) => {
             JSON.stringify(data, null, 2),
             err => {
                 if (err) throw err
-                cb('Operação realizada com sucesso!')
+                cb('Operacao realizada com sucesso!')
             }
         )
     }
