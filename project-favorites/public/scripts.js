@@ -2,6 +2,8 @@ const ul = document.querySelector('ul')
 const input = document.querySelector('input')
 const form = document.querySelector('form')
 
+const fs = require ('fs')
+
 async function load(){
     const res  = await fetch('http://localhost:3000').then(data => data.json())
     res.urls.map(({name,url}) => addElement({name,url}))
